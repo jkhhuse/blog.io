@@ -77,8 +77,10 @@ layout: default
             </div>
         </div>
     </div>
+    <div id="gitmentContainer"></div>
 </article>
-<div id="gitmentContainer"></div>
+
+
 
 <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 <script type="text/javascript">
@@ -140,6 +142,7 @@ layout: default
 <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
 <script>
     var gitment = new Gitment({
+        id: '<%= page.date %>',
         owner: 'jkhhuse',
         repo: 'jkhhuse.github.io',
         oauth: {
